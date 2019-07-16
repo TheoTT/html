@@ -1,0 +1,114 @@
+<!-- 
+- 元素
+- 语言机制
+
+
+元素
+
+文档元信息类：head标签中的元素，文档的源信息。
+语义相关：纯文本，文章结构，不同语言要素。
+链接：提供到文档内何文档外的链接。
+替换形标签：引入声音、图片、视频等外部元素替换自身的一类标签。
+
+表单：填写和提交信息。
+表格：表头、表尾、单元格等表格的结构。
+
+> 表格、表单为固定用法。
+
+
+
+
+语言机制
+
+实体
+命名空间
+
+
+
+语义类标签
+
+section,nav,p
+语义类标签是纯文字的补充,如标题,自然段,章节,列表等,无法使用纯文字进行表达,需要依靠语义标签代为表达
+
+div span走天下:当前HTML描述软件界面多余富文本,在特定场景语义类标签依旧有无可替代的优点:
+- 对开发者友好
+- 对搜索引擎友好 -->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+        <!-- 加载样式 -->
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <script src="scripts/main.js" async></script>
+
+    <meta charset="utf-8">
+    <title>测试页面</title>
+  </head>
+  <body>
+          <h1>Hello world</h1>
+    <img src="image/yang.jpg" alt="FireFox标志">
+    <p>Mozilla 是一个全球社区，这里聚集着来自
+        <ol>
+            <li>
+                    五湖四海的技术人员
+            </li>
+            <li>
+                    思考者和建造者
+            </li>
+        </ol>
+        ……我们致力于
+    </p>
+    <p>Mozilla 是一个全球社区，这里聚集着来自
+            <ul>
+                <li>
+                        五湖四海的技术人员
+                </li>
+                <li>
+                        思考者和建造者
+                </li>
+            </ul>
+            <em>……我们致力于</em>
+
+        </p>
+<a href="https://www.mozilla.org/zh-CN/about/manifesto/">宣言</a>
+<button>切换用户</button>
+  </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html> — 文档类型。混沌初分，HTML 尚在襁褓（大约是 1991/92 年），DOCTYPE 用来链接一些 HTML 编写守则，有点像自动校正等。然而现在已经没有人关心这些，只是因为历史原因必须将它们保留，但没有实际作用。现在你只需要知道这些就可以。
+<html></html> — <html> 元素。这个元素包含了整个页面的内容，有时也被称作根元素。
+<head></head> — <head> 元素。这个元素放置的内容不是展现给用户的，而是包含例如面向搜索引擎的搜索关键字（keywords）、页面描述、CSS 样式表和字符编码声明等。
+<meta charset="utf-8"> — 这个元素指定了当前文档使用 UTF-8 字符编码 ，UTF-8 包括绝大多数人类已知语言的字符。基本上 UTF-8 可以处理任何文本内容，还可以避免以后出现某些问题，我们没有任何理由再选用其他编码。
+<title></title> — <title> 元素。这个元素设置页面的标题，显示在浏览器标签页上，同时作为收藏网页的描述文字。
+<body></body> — <body> 元素。这个元素包含期望让用户在访问页面时看到的内容，可以是文本、图像、视频、游戏、可播放的音轨或其他内容。 
+<p>这是一个段落</p>   <p> 元素是用来指定段落的。通常用于指定常规的文本内容
+<img src="images/firefox-icon.png" alt="测试图片"> alt 属性的关键字即“描述文本”。alt 文本应向用户完整地传递图像要表达的意思
+无序列表（Unordered List）中项目的顺序并不重要，就像购物列表。用一个 <ul> 元素包围。
+有序列表（Ordered List）中项目的顺序很重要，就像烹调指南。用一个 <ol> 元素包围。
+列表的每个项目用一个列表项目（List Item）元素 <li> 包围。
+<a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言</a>,超文本引用（ hypertext reference）
+
+<em>和</em> 使得行内容变成斜体强调
+<strong>爆</strong> 着重强调
+
+<input type="text" disabled>
+-->
+
+<!-- 
+块级元素在页面中以块的形式展现 —— 相对与其前面的内容它会出现在新的一行，其后的内容也会被挤到下一行展现。块级元素通常用于展示页面上结构化的内容，例如段落、列表、导航菜单、页脚等等。一个以block形式展现的块级元素不会被嵌套进内联元素中，但可以嵌套在其它块级元素中。
+
+内联元素通常出现在块级元素中并包裹文档内容的一小部分，而不是一整个段落或者一组内容。内联元素不会导致文本换行：它通常出现在一堆文字之间例如超链接元素<a>或者强调元素<em>和 <strong>。 
+-->
+
+<!-- <link> 元素经常位于文档的头部。这个link元素有2个属性，rel="stylesheet"表明这是文档的样式表，而 href包含了样式表文件的路径：
+
+<link rel="stylesheet" href="my-css-file.css">
+<script> 部分没必要非要放在文档头部；实际上，把它放在文档的尾部（在 </body>标签之前）是一个更好的选择，这样可以确保在加载脚本之前浏览器已经解析了HTML内容（如果脚本加载某个不存在的元素，浏览器会报错）。
+
+<script src="my-js-file.js"></script>
+注意： <script>元素看起来像一个空元素，但它并不是，因此需要一个结束标记。您还可以选择将脚本放入<script>元素中，而不是指向外部脚本文件。 -->
