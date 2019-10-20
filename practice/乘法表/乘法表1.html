@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+  <head>
+    <title>九九乘法表</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  </head>
+  
+<body bgcolor="#e0f1ff"/>
+   <script type="text/javascript">
+      document.write("<table border=1 cellpadding=6 style=border-collapse:collapse>")
+      document.write("<tr><td>图形01</td></tr>");
+      for(var i=1;i<=9;i++)
+      {
+          document.write('<tr>');
+          for(var j=1;j<=i;j++)
+          {
+            if(j<=i)
+              document.write("<td>"+i+"*"+j+"="+(i*j)+"</td>" );
+          }
+          // 写入空单元格
+          // for(var k=j;k<10;k++)
+          // {
+          //   document.write("<td></td>");
+          // }
+ 		      document.write("</tr>");
+          document.write("<br>")
+      }
+      document.write("</table>");
+      
+      document.write("<table border=1 cellpadding=6 style=border-collapse:collapse>")
+      document.write("<tr><td>图形02</td></tr>");
+      for(var i=9;i>=1;i--)
+      {
+          document.write('<tr>');
+          for(var j=1;j<=i;j++)
+          {
+          //   if(j<=i)
+          //     document.write("<td>"+i+"*"+j+"="+(i*j)+"</td>" );
+          // }
+
+          // // 写入空单元格
+          // // for(var k=j;k<10;k++)
+          // // {
+          // //   document.write("<td></td>");
+          // // }
+ 		      // document.write("</tr>");
+          // document.write("<br>")
+      }
+      document.write("</table>");
+      
+      document.write("<table border=1 cellpadding=6 style=border-collapse:collapse>")
+      document.write("<tr><td>图形03</td></tr>");
+      for(var i=1;i<=9;i++)
+      {
+          document.write('<tr>');
+          
+          // 写入空单元格
+          for(var k=0;k<9-i;k++)
+          {
+            document.write("<td></td>");
+          }
+
+          for(var j=i;j>=1;j--)
+          {
+            if(j<=i)
+              document.write("<td>"+i+"*"+j+"="+(i*j)+"</td>" );
+          }
+ 		      document.write("</tr>");
+          document.write("<br>")
+      }
+      document.write("</table>");
+      
+      document.write("<table border=1 cellpadding=6 style=border-collapse:collapse>")
+      document.write("<tr><td>图形04</td></tr>");
+      for(var i=9;i>=1;i--)
+      {
+          document.write('<tr>');
+          
+          // 写入空单元格
+          for(var k=0;k<9-i;k++)
+          {
+            document.write("<td></td>");
+          }
+
+          for(var j=i;j>=1;j--)
+          {
+            if(j<=i)
+              document.write("<td>"+i+"*"+j+"="+(i*j)+"</td>" );
+          }
+ 		      document.write("</tr>");
+          document.write("<br>")
+      }
+      document.write("</table>");
+</script>
+</body>
+</html>
