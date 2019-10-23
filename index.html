@@ -76,7 +76,9 @@ div span走天下:当前HTML描述软件界面多余富文本,在特定场景语
 <a href="https://www.mozilla.org/zh-CN/about/manifesto/">宣言</a>
 <button>切换用户</button>
   </body>
-</html>
+</html> 
+
+
 
 
 
@@ -112,3 +114,68 @@ div span走天下:当前HTML描述软件界面多余富文本,在特定场景语
 
 <script src="my-js-file.js"></script>
 注意： <script>元素看起来像一个空元素，但它并不是，因此需要一个结束标记。您还可以选择将脚本放入<script>元素中，而不是指向外部脚本文件。 -->
+
+
+<!-- 
+2019-09-19
+HTML (头部)head
+
+HTML 头部是包含在 <head> 元素里面的内容。不像 <body> 元素的内容可以显示在浏览器中，元素head 里面的内容不会在浏览器中显示，它的作用是包含一些页面的元数据。
+例子：
+<head>
+  <meta charset="utf-8">
+  <title>My test page</title>
+</head>
+
+一般包含：
+- title 元素
+- meta 元素
+- link 元素（引用网页图标、CSS样式文件）
+- script 元素（引用JavaScript文件，但已经不推荐）
+
+
+title：<title></title>
+
+作用：
+1. 给 html 文档添加一个标题
+2. <title> 的内容被作为建议的书签名
+3. <title> 的内容也被用在搜索的结果中
+
+与<H1></H1>的区别：
+- 当被加载到浏览器中的时候，元素 <h1>  会出现在页面中 —— 通常它应该在一个页面中只被使用一次，它被用来标记你的页面内容的标题（故事的标题，新闻标题或者任何适当的方式）。
+- 元素 <title> 是用来表示整个HTML文档大致内容的元数据（不是文档的内容）。
+
+meta：<meta>
+
+作用：
+1. 指定文档的字符编码：<meta charset="utf-8">
+2. 添加作者与描述：
+
+name 指定了meta 元素的类型； 说明该元素包含了什么类型的信息。
+content 指定了实际的元数据内容
+例子：
+<meta name="author" content="Chris Mills">
+<meta name="description" content="The MDN Learning Area aims to provide
+complete beginners to the Web with all they need to know to get
+started with developing web sites and applications.">
+
+注：当你在网站上查看源码时，你也会发现其他类型的元数据。你在网站上看到的许多功能都是专有创作，旨在向某些网站(如社交网站)提供可使用的特定信息。
+
+link：<link rel="stylesheet" href="">
+- rel表明文档样式"stylesheet","shortcut icon"
+- href包含了样式表文件的路径
+作用：
+1. 添加网页图标：<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+注：现代浏览器在各种场合使用favicons，如打开的页面标签页和书签面板中的书签页面。
+
+2. 应用CSS：<link rel="stylesheet" href="my-css-file.css">
+
+script: <script src=""></script>
+作用：在文档中应用<script src="my-js-file.js"></script>
+<script> 部分没必要非要放在文档头部；实际上，把它放在文档的尾部（在 </body>标签之前）是一个更好的选择，这样可以确保在加载脚本之前浏览器已经解析了HTML内容（如果脚本加载某个不存在的元素，浏览器会报错）
+
+其他：
+为文档设定主语言：
+<html lang="en-US">
+ -->
+
