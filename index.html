@@ -49,18 +49,17 @@ div span走天下:当前HTML描述软件界面多余富文本,在特定场景语
   </head>
   <body>
           <h1>Hello world</h1>
-    <img src="image/yang.jpg" alt="FireFox标志">
-    <p>Mozilla 是一个全球社区，这里聚集着来自
-        <ol>
-            <li>
-                    五湖四海的技术人员
-            </li>
-            <li>
-                    思考者和建造者
-            </li>
-        </ol>
-        ……我们致力于
-    </p>
+    <img src="image/yang.jpg" alt="FireFox标志" srcset="yang-320w.jpg 320w,
+             yang-480w.jpg 480w,
+             yang-800w.jpg 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px>">
+    <picture>
+  <!-- <source type="image/svg+xml" srcset="pyramid.svg">
+  <source type="image/webp" srcset="pyramid.webp">  -->
+  <img src="image/yang.jpg" alt="regular pyramid built from four equilateral triangles">
+  </picture>
     <p>Mozilla 是一个全球社区，这里聚集着来自
             <ul>
                 <li>
@@ -71,9 +70,36 @@ div span走天下:当前HTML描述软件界面多余富文本,在特定场景语
                 </li>
             </ul>
             <em>……我们致力于</em>
+<video src="image/大环线4K2_20191227_124000_20191227_124500.mp4" controls>
+  <p>你的浏览器不支持 HTML5 视频。可点击<a href="image/大环线4K2_20191227_124000_20191227_124500.mp4">此链接</a>观看</p>
+</video>
+    </p>
+    <p>
+        练习：
+        <ul>
+                <li>
+                        <a href="start/letter.html" title="信件标记练习"> 信件标记练习</a>
+                </li>
+                <li>
+                        <a href="start_01/index.html" title="网站架构练习">网站架构练习</a>
+                </li>
+                <li>
+                        <a href="标记字母" title="标记字母">标记字母</a>
+                </li>
+                <li>
+                        <a href="table.html">table</a>
+                </li>
+                <li>
+                        <a href="assessment-start/blank-template.html">table-test</a>
+                </li>
+                <li>
+                        <a href="form.html">form</a>
+                </li>
 
-        </p>
-<a href="https://www.mozilla.org/zh-CN/about/manifesto/">宣言</a>
+        </ul>
+
+    </p>
+
 <button>切换用户</button>
   </body>
 </html> 
@@ -177,5 +203,51 @@ script: <script src=""></script>
 其他：
 为文档设定主语言：
 <html lang="en-US">
+
+
  -->
+
+<!--
+插入图片
+ <img src="" alt="" srcset="">
+<img src="images/dinosaur.jpg"
+     alt="一只恐龙头部和躯干的骨架，它有一个巨大的头，长着锋利的牙齿。"
+     width="400"
+     height="341"
+     title="曼彻斯特大学博物馆展出的一只霸王龙的化石">
+     
+alt ，它的值应该是对图片的文字描述，用于在图片无法显示或不能被看到的情况
+title属性,给我们一个鼠标悬停提示，看起来就像链接标题
+<img srcset="elva-fairy-320w.jpg 320w,
+             elva-fairy-480w.jpg 480w,
+             elva-fairy-800w.jpg 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+
+总而言之，如果图像对您的内容里有意义，则应使用HTML图像。 如果图像纯粹是装饰，则应使用CSS背景图片
+
+
+插入视频，音频
+
+<video controls width="400" height="400"
+       autoplay loop muted
+       poster="poster.png">
+  <source src="rabbit320.mp4" type="video/mp4">
+  <source src="rabbit320.webm" type="video/webm">
+  <p>你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+</video>
+
+<audio controls>
+  <source src="viper.mp3" type="audio/mp3">
+  <source src="viper.ogg" type="audio/ogg">
+  <p>你的浏览器不支持 HTML5 音频，可点击<a href="viper.mp3">此链接</a>收听。</p>
+</audio>
+
+
+缩写
+<abbr title="litao">LT</abbr>
+
+-->
 
