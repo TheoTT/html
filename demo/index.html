@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startTime()">
+    <div class="container">
+        <div class="wrapper">
+            <div class="header">
+                <div class="header_nav">
+                    <div class="header_title">
+                        lit's blog
+                    </div>
+                    <div class="header_nav_bar">
+                        <ul>
+                            <li><a href="#">learn_python</a></li>
+                            <li><a href="#">learn_linux</a></li>
+                            <li><a href="#">learn_go</a></li>
+                            <li><a href="#">learn_html</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_img">
+                        <img src="mwx.jpg" alt="mwx">
+                    </div>
+                    <div class="header_soptlight">
+                        <form action="">
+                            <label for="soptlight">搜索</label>
+                            <input type="text" name="key">        
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="body">
+                <div class="body_title">
+                    <h2>冥王星图片展示</h2>
+                    <p>
+                    冥王星（小行星序号：134340 Pluto；天文代号：♇，Unicode编码：U+2647）是柯伊伯带中的矮行星。冥王星是第一颗被发现的柯伊伯带天体。冥王星是太阳系内已知体积最大、质量第二大的矮行星。在直接围绕太阳运行的天体中，冥王星体积排名第9，质量排名第10。冥王星是体积最大的海外天体，其质量仅次于位于离散盘中的阋神星。与其他柯伊伯带天体一样，冥王星主要由岩石和冰组成。冥王星相对较小，仅有月球质量的1/6、月球体积的1/3。冥王星的轨道离心率及倾角皆较高，近日点为30天文单位（44亿公里），远日点为49天文单位（74亿公里）。冥王星因此周期性进入海王星轨道内侧。海王星与冥王星因相互的轨道共振而不会碰撞。在冥王星距太阳的平均距离上太阳光需要5.5小时到达冥王星。
+                    </p>
+                </div>
+                <div class="img">
+                    <a href="#" target="_self">
+                        <img src="mwx.jpg" alt="mwx" width="200px" height="200px">
+                    </a>
+                    <div class="img_txt">冥王星图片</div>
+                </div>
+                <div class="img">
+                    <a href="#" target="_self">
+                        <img src="mwx.jpg" alt="mwx" width="200px" height="200px">
+                    </a>
+                    <div class="img_txt">冥王星图片</div>
+                </div>
+                <div class="img">
+                    <a href="#" target="_self">
+                        <img src="mwx.jpg" alt="mwx" width="200px" height="200px">
+                    </a>
+                    <div class="img_txt">冥王星图片</div>
+                </div>
+                <div class="img">
+                    <a href="#" target="_self">
+                        <img src="mwx.jpg" alt="mwx" width="200px" height="200px">
+                    </a>
+                    <div class="img_txt">冥王星图片</div>
+                </div>
+                <div class="img">
+                    <a href="#" target="_self">
+                        <img src="mwx.jpg" alt="mwx" width="200px" height="200px">
+                    </a>
+                    <div class="img_txt">冥王星图片</div>
+                </div>
+            </div>
+        </div>
+        <div class="footing">
+            @lit
+            <p id="clock"></p>
+        </div>
+    </div>
+<script>
+    function startTime(){
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("clock").innerHTML="time:" + h + ":" + m + ":" + s 
+        t = setTimeout(function(){
+            startTime();
+        }, 1000);
+    }
+
+    function checkTime(i){
+        if(i<10){
+            i = "0" + i
+        }
+        return i
+    }
+</script>
+    
+</body>
+</html>

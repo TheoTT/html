@@ -1,0 +1,20 @@
+#tb{
+    border-collapse: collapse;
+    width: 500px;
+}
+
+#tb td, #tb th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#tb th{
+    text-align: right;
+    background-color: aqua;
+    color: azure;
+}
+
+#tb tr.alt td{
+    color:black;
+    background-color: aquamarine;
+}
