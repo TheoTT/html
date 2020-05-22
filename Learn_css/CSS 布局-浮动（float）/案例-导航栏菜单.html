@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例-导航栏菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 760px;
+            height: 182px; 
+            margin: 0 auto;
+        }
+
+        .header {
+            width: 760px;
+            height: 150px; 
+            background: url(./banner.jpg) no-repeat 0 0; 
+        }
+
+        .nav {
+            width: 760px;
+            height: 32px;  
+            background: url(./nav_bg.jpg) repeat-x;
+            /* border: 1px solid green; */
+        }
+
+        .nav ul li {
+            float: left;
+            height: 32px;
+            width: 80px;
+            line-height: 32px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            /* 需要给a设置宽高，先转换为块级元素（设置整个li盒子hover效果） */
+            display: block;
+            height: 32px;
+            width: 80px;
+            font-size: 14px;
+            background-image: url(./button1.jpg);
+
+        }
+
+        .nav ul li a:hover {
+            background-image: url(./button2.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <img src="./banner.jpg" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">首页</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

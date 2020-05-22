@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+    <style>
+        .bg {
+            height: 300px;
+            width: 600px;
+            background-color: pink;
+        }
+        .bgm {
+            height: 300px;
+            width: 600px;
+            /* 
+            1.背景图片必须加url， 
+            2.路径不需要使用引号
+            3. 默认显示效果为平铺
+            */
+            background-image: url(./bg.jpg);
+            /* 取消平铺 */
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        背景颜色
+    </div>
+    <div class="bgm">
+        背景图片
+    </div>
+</body>
+</html>

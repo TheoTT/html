@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑动门</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+        /* 
+           1. a 设置 背景左侧，padding撑开合适宽度。
+           2. span 设置背景右侧， padding撑开合适宽度 剩下由文字继续撑开宽度。
+           3. 之所以a包含span就是因为 整个导航都是可以点击的。
+         */
+        a {
+            display: inline-block;
+            height: 33px;
+            background: url(./to.png) no-repeat;
+            /* margin: 0 auto; */
+            color: #ffffff;
+            text-decoration: none;
+            /* vertical-align: middle; */
+            line-height: 33px;
+            padding-left: 15px;
+        }
+
+        a span {
+            display: inline-block;
+            height: 33px;
+            background: url(./to.png) no-repeat right top;
+            padding-right: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">
+        <span>首页首页</span>
+    </a>
+    
+</body>
+</html>

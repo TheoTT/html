@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例-淘宝轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .tb {
+            width: 534px;
+            height: 296px;
+            margin: auto;
+            /* 子绝父相 */
+            position: relative;
+
+        }
+
+        .a-l {
+            position: absolute;
+            /* 绝对定位左垂直居中 */
+            top: 50%;
+            margin-top: -20px;
+            left: 0;
+            /* 定位后可以直接设置宽高 */
+            width: 20px;
+            height: 20px;
+            /* background-color: pink; */
+            /* 设置背景透明 */
+            background: rgba(0, 0, 0, .2);
+            /* 设置文字颜色，水平居中、垂直居中 */
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            /* 设置圆角边框 */
+            border-radius: 50%;
+            text-decoration: none;
+
+
+        }
+        .a-r {
+            position: absolute;
+            /* 绝对定位左垂直居中 */
+            top: 50%;
+            margin-top: -20px;
+            right: 0;
+            /* 定位后可以直接设置宽高 */
+            width: 20px;
+            height: 20px;
+            /* background-color: pink; */
+            /* 设置背景透明 */
+            background: rgba(0, 0, 0, .2);
+            /* 设置文字颜色，水平居中、垂直居中 */
+            color: #fff;
+            /* text-align: center; */
+            line-height: 20px;
+            /* 设置圆角边框 */
+            border-radius: 50%;
+            text-decoration: none;
+
+        }
+        /* 优化代码 */
+        a-l,
+        a-r {
+            position: absolute;
+            /* 绝对定位左垂直居中 */
+            top: 50%;
+            margin-top: -20px;
+            /* 定位后可以直接设置宽高 */
+            width: 20px;
+            height: 20px;
+            /* background-color: pink; */
+            /* 设置背景透明 */
+            background: rgba(0, 0, 0, .2);
+            /* 设置文字颜色，水平居中、垂直居中 */
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            /* 设置圆角边框 */
+            border-radius: 50%;
+            text-decoration: none;  
+        }
+
+        .a-l {
+            left: 0;
+        }
+
+        .a-r {
+            right: 0;
+        }
+
+        .a-l:hover,
+        .a-r:hover {
+            /* background-color: #cccccc; */
+            background: rgba(0, 0, 0, .4);
+        }
+        
+        .circle {
+            width: 70px;
+            height: 13px;
+            /* background-color: pink; */
+            background: rgba(0, 0, 0, .2);
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -35px;
+        }
+
+        .circle li {
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            float: left;
+            margin: 3px 3px;
+            border-radius: 50%;
+        }
+        /* 注意选择器权重 */
+
+        .circle .current {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="tb">
+        <!-- 左按钮 -->
+        <a href="#" class="a-l">&lt;</a>
+        <!-- 右按钮 -->
+        <a href="#" class="a-r">&gt;</a>
+        <!--切换按钮 -->
+        <ul class="circle">
+            <li></li>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- 图片 -->
+        <img src="./淘宝.png" alt="">
+    </div>
+</body>
+</html>

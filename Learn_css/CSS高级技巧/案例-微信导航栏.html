@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例-微信导航栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+        }
+        body {
+            background: url(./wx.jpg) repeat-x;
+        }
+        .nav a {
+            display: inline-block;
+            height: 33px;
+            background: url(./to.png) no-repeat;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            padding-left: 16px;
+            line-height: 33px;
+            /* border-radius: 75%; */
+        }
+
+        .nav a span {
+            display: inline-block;
+            height: 33px;
+            background: url(./to.png) no-repeat right top;
+            padding-right: 16px;
+        }
+
+        .nav li {
+            float: left;
+            /* margin-left: 10px; */
+            margin: 0 5px;
+        }
+        .head {
+            margin: 0 auto;
+            width: 1002px;
+            margin-top: 21px;
+            text-align: center;
+        }
+
+        .head ul {
+            float: right;
+        }
+        .head img {
+            float: left;
+            height: 33px;
+        }
+
+        .nav a:hover,
+        .nav a:hover span {
+            background-image: url(./ao.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <a href="#">
+            <img src="./dNEBuK6.png" alt="">
+        </a>
+        <ul class="nav">
+            <li><a href="#"><span>首页</span></a></li>
+            <li><a href="#"><span>帮助与反馈</span></a></li>
+            <li><a href="#"><span>帮助与反馈</span></a></li>
+            <li><a href="#"><span>帮助与反馈</span></a></li>
+            <li><a href="#"><span>帮助与反馈</span></a></li>
+
+        </ul>
+    </div>
+</body>
+</html>

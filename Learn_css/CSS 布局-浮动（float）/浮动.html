@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .inline {
+            display: inline-block;
+            height: 100px;
+            width: 300px;
+        }
+
+        .f {
+            height: 100px;
+            width: 300px;
+            float: left;
+        }
+
+        .float {
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="inline-block">
+        <div class="inline" style="background-color: green;"></div>
+        <div class="inline" style="background-color: hotpink;"></div>
+        <div class="inline" style="background-color: indigo;"></div> 
+    </div>
+    <div class="float">
+        <div class="f" style="background-color: green;"></div>
+        <div class="f" style="background-color: hotpink;"></div>
+        <div class="f" style="background-color: indigo; float: right;"></div> 
+    </div>
+
+</body>
+</html>

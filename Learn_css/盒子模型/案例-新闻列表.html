@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例-新闻列表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .articles {
+            width: 298px;
+            height: 198px;
+            margin: 100px auto;
+            padding: 15px;
+            border: 1px solid gray;
+            background: url(./line.jpg);
+            border-radius: 60px;
+        }
+        .title h2 {
+            font-size: 18px;
+            padding: 5px 0;
+            border-bottom: 1px solid #000;
+            margin-bottom: 15px;
+        }
+        .list li {
+            border-bottom: 1px dashed #ccc;
+            height: 30px;
+            line-height: 30px;
+            /* background-image: url(./arr.jpg);
+            background-position: 5px center;
+            background-repeat: no-repeat; */
+            background: url(./arr.jpg) no-repeat 5px center;
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: #333333;
+            margin-left: 20px;
+        }
+        .list li a:hover {
+            text-decoration-line: underline;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="articles">
+        <div class="title">
+            <h2>最新文章/New Articles</h2>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <a href="#">文章</a>
+                </li>
+                <li>
+                    <a href="#">文章</a>
+                </li>
+                <li>
+                    <a href="#">文章</a>
+                </li>
+                <li>
+                    <a href="#">文章</a>
+                </li>
+                <li>
+                    <a href="#">文章</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
