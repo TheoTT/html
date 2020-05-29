@@ -1,0 +1,177 @@
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    padding-left: 15px;
+    border-left: 1px solid #c81523;
+}
+
+.sk-list ul {
+    float: left;
+}
+
+.sk-list ul li {
+    float: left;  
+}
+
+.sk-list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk-con ul li {
+    float: left;
+    line-height: 47px;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.sk-con ul li:last-of-type a::after {
+    content: '\ea52';
+    font-family: 'icomoon';
+    margin-left: 8px;
+}
+
+/* .sk-container .sk-bd {
+    overflow: hidden;
+} */
+
+.sk-container .sk-bd ul {
+    overflow: hidden;
+    margin-top: 10px;
+    width: 1300px;
+}
+
+.sk-container .sk-bd ul li {
+    float: left;
+    margin: 0 6px;
+    width: 290px;
+    height: 460px;
+    /* 去除li原始边框 */
+    border: 1px solid transparent;
+}
+
+.sk-bd ul li:hover {
+    border: 1px solid #c81523;
+}
+
+
+.sk-container .sk-bd ul li a {
+    display: block;
+    /* width: 290px;
+    height: 460px; */
+}
+
+.sk-bd .sk-img {
+    width: 283px;
+    height: 290px;
+    transition: all .4s;
+}
+
+.sk-bd .sk-img:hover {
+    transform: scale(1.1);
+}
+
+.sk-bd .sk-goods-title {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.sk-bd .sk-good-price {
+    padding: 0 10px;
+}
+
+.sk-good-price em {
+    font-size: 22px;
+    color: #e60012;
+}
+
+.sk-good-price del {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a4a4a4;
+}
+
+.sk-good-progress i {
+    color: #f24349;
+}
+
+/* 销售进度 */
+.sk-good-progress .bar {
+    display: inline-block;
+    width: 130px;
+    height: 10px;
+    border: 1px solid #b1191a;
+    /* 基于中线对齐 */
+    vertical-align: middle;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.bar .bar-in {
+    width: 87%;
+    height: 10px;
+    background-color: #f24349;
+}
+
+.sk-container .sk-bd .sk-buy {
+    width: 100%;
+    height: 50px;
+    margin-top: 6px;
+    line-height: 50px;
+    background-color: #b1191a;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.page {
+    margin: 40px 0;
+    /* 让行内元素，行内块居中对齐 */
+    text-align: center;
+}
+
+.page .page-num a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.page .page-num a:first-of-type {
+    width: 85px;
+}
+
+.page .page-num a:last-of-type {
+    width: 85px;
+}
+
+.page .page-num .current {
+    border: none;
+    background-color: transparent;
+    color: #b1191a;
+}
+
+.page .page-num .dotted {
+    border: none;
+    background-color: transparent;
+
+}
+
+.page .page-skip a,
+.page .page-skip input {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}

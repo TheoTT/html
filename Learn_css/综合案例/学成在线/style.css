@@ -271,6 +271,7 @@ button {
 }
 
 .box-bd li {
+    /* overflow: hidden; */
     float: left;
     position: relative;
     width: 228px;
@@ -284,6 +285,13 @@ button {
 .box-bd li img {
     /* position: relative; */
     width: 100%;
+    /* 添加图片放大效果过渡 */
+    transition: all .4s;
+}
+
+.box-bd li img:hover {
+    /* 添加图片放大效果 */
+    transform: scale(1.1);
 }
 
 .box .hot,

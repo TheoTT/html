@@ -1,0 +1,258 @@
+.service-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons.png) no-repeat;
+}
+
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+    /* background-color: pink; */
+}
+
+.main .focus {
+    float: left;
+}
+
+.main .focus img {
+    height: 455px;
+}
+
+.main .newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+    /* background-color: skyblue; */
+}
+
+.newflash .news {
+    height: 165px;
+    border: 1px solid #ccc;
+}
+
+.news .news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    content: '\ea52';
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+.news .news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd li {
+    /* 文字一行显示 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    height: 24px;
+    line-height: 24px;
+}
+
+.newflash .lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* 还要调整位置，不能直接用bg */
+    /* background: url(../img/icons.png) no-repeat -17px -16px; */
+}
+
+.lifeservice ul li a {
+    display: block;
+    width: 63px;
+    height: 71px;
+    text-align: center;
+}
+
+.lifeservice .hot {
+    /* display: block;
+    width: 12px;
+    height: 15px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.lifeservice .service-hf {
+    margin-top: 12px;
+    background-position: -17px -16px;
+}
+
+.lifeservice .service-jp {
+    margin-top: 12px;
+    background-position: -17px -16px;
+}
+
+.newflash .bargain {
+    margin-top: 5px;
+}
+
+.recomend {
+    height: 143px;
+    margin-top: 12px;
+}
+
+.recomend .recomend-hd {
+    position: relative;
+    float: left;
+    width: 205px;
+    height: 100%;
+    background-color: #525251;
+}
+
+.recomend-hd img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recomend .recomend-bd {
+    float: left;
+}
+
+.recomend-bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recomend-bd ul li:nth-child(n-3):after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 143px;
+    width: 1px;
+    background-color: #ddd;
+
+}
+
+.recomend-bd ul li img{
+    width: 248px;
+    height: 143px;
+}
+
+
+.floor .jiadian {
+    margin-top: 30px;
+}
+
+.jiadian .box-hd{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.box-hd .tab-list ul {
+    float: right;
+}
+
+.tab-list ul li {
+    float: left;
+}
+
+.tab-list ul li a {
+    margin: 0 18px;
+}
+
+.jiadian .box-bd {
+    height: 361px;
+
+}
+
+.box-bd li {
+    overflow: hidden;
+}
+
+.box-bd img {
+    transition: all .2s;
+}
+
+.box-bd img:hover {
+    margin-left: 8px;
+}
+
+.box-bd div[class^="col"] {
+    overflow: hidden;
+}
+
+.table-content-item > div {
+    float: left;
+    height: 361px;
+}
+
+.col-210 {
+    width: 210px;
+    background-color: #fbfbfb;
+}
+
+.col-210 li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 8px;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 10px;
+}
+
+.col-219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+
+.col-221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col-329 {
+    width: 329px;
+}
+
+.bdb {
+    /* 如果a包含块级元素时，需要转换为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
