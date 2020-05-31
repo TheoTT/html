@@ -1,0 +1,286 @@
+.detail {
+    margin-top: 20px;
+}
+
+.detail .crumb-wrap a {
+    margin-right: 10px;
+}
+
+.detail .crumb-wrap {
+    height: 25px;
+    line-height: 25px;
+}
+
+.product_intro .preview_wrap {
+    width: 400px;
+    height: 590px;
+}
+
+.preview_wrap img {
+    width: 398px;
+    height: 398px;
+    border: 1px solid #ccc;
+}
+
+.preview_wrap .preview-list {
+    position: relative;
+    margin-top: 60px;
+    width: 398px;
+    height: 60px;
+}
+
+.preview-list .list-item {
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.list-item li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    margin: 0 2px;
+}
+
+.list-item li img {
+    width: 56px;
+    height: 56px;
+    border: 2px solid red;
+
+}
+
+.preview-list .arrow_prew {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.arrow_prew img,
+.arrow_next img {
+    width: 22px;
+    height: 32px;
+    border: none;
+}
+
+.preview-list .arrow_next {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.product_intro .itemInfo_wrap {
+    width: 718px;
+    margin-left: 20px;
+}
+
+.itemInfo_wrap .sku-name {
+    height: 30px;
+    font-size: 16px;
+}
+
+.itemInfo_wrap .news {
+    height: 32px;
+    color: #e661ac;
+}
+
+/* 清除浮动 */
+.summary dl {
+    position: relative;
+    overflow: hidden;
+}
+
+.summary dt,
+.summary dd {
+    float: left;
+    padding-left: 15px;
+    line-height: 36px;
+}
+
+.summary dt {
+    width: 80px;
+    /* margin-right: 30px; */
+}
+
+.summary .price {
+    padding: 10px 0;
+    background-color: #fee9eb;
+}
+
+.price .price-num {
+    font-size: 26px;
+    color: red;
+}
+
+.price .report {
+    display: inline;
+    border: none;
+    color: red;
+}
+
+.price .remark {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.remark i {
+    color: royalblue;
+}
+
+.summary .summary_promotion {
+    background-color: #fee9eb;
+}
+
+.summary_promotion i {
+    color: #fff;
+    background-color: red;
+}
+
+.summary dl a {
+    display: block;
+    height: 32px;
+    width: 82px;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.summary .choosed {
+    border: 1px solid red;
+}
+
+.summary .choose-amount {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 46px;
+
+}
+
+.choose-amount input {
+    /* position: relative; */
+    /* float: left; */
+    width: 33px;
+    height: 44px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.add,
+.sub {
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 22px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 22px;
+}
+
+.choose-amount .add {
+    top: 0;
+}
+
+.choose-amount .sub{
+    bottom: 0;
+}
+.summary .add-shopcar {
+    display: block;
+    float: left;
+    width: 142px;
+    height: 46px;
+    margin-left: 10px;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 46px;
+}
+
+.product-detail .aside {
+    width: 208px;
+    border: 1px solid #ccc;
+}
+
+.product-detail .detail-content {
+    width: 978px;
+}
+
+.aside .tab-list {
+    height: 34px;
+}
+
+.tab-list ul li {
+    float: left;
+    width: 103px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.tab-list .current {
+    background-color: #fff;
+    color: red;
+    border-bottom: 0;
+}
+
+.tab-con {
+    padding: 0 10px;
+}
+
+.tab-con ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-con li h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+
+.tab-con .aside-price {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.tab-con .aside-addcar {
+    display: block;
+    width: 88px;
+    height: 26px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 26px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+
+.detail-table-list {
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.detail-table-list ul li {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.detail-table-list .current {
+    background-color: red;
+    color: #fff;
+}
+
+.detail-table-con .item-info {
+    padding: 20px 0 0 20px;
+}
+.item-info li {
+    line-height: 22px;
+}
